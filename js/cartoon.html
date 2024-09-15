@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>漫画政策</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* 防止整个页面滚动，只允许容器滚动 */
+        }
+
+        .container {
+            width: 70%;
+            margin: 50px auto;
+            background-color: #ffffff;
+            border: 5px solid #000000;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 10px 10px 0px 0px #000000;
+            overflow-y: auto;
+            max-height: 80vh;
+            position: relative;
+        }
+
+        .header {
+            text-align: center;
+            font-size: 2em;
+            color: #333;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            width: 80%;
+            height: auto;
+            border: 3px solid #000000;
+            box-shadow: 5px 5px 0px 0px #000000;
+            border-radius: 10px;
+        }
+
+		.button-container {
+		    text-align: center;
+		    margin-top: 20px;
+		}
+		
+		.acknowledge-button {
+		    font-size: 1.2em;
+		    padding: 10px 20px;
+		    color: #ffffff;
+		    background-color: #000000;
+		    border: none;
+		    border-radius: 5px;
+		    cursor: pointer;
+		    box-shadow: 3px 3px 0px 0px #555555;
+		    transition: background-color 0.3s ease;
+		}
+		
+		.acknowledge-button:hover {
+		    background-color: #333333;
+		}
+		
+		.acknowledge-message {
+		    margin-top: 20px;
+		    font-size: 1.2em;
+		    color: green;
+		    display: none;
+		}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+        漫画政策
+        </div>
+        <div class="image-container">
+            <img src="c1.png" alt="Comic Image">
+        </div>
+		<div class="image-container">
+		    <img src="c2.png" alt="Comic Image">
+		</div>
+		<div class="button-container">
+		    <button class="acknowledge-button" onclick="showAcknowledgement()">我已了解</button>
+		</div>
+    </div>
+	
+	<script>
+	    function showAcknowledgement() {
+	        window.location.href = "storage.html";
+	    }
+	</script>
+</body>
+</html>
